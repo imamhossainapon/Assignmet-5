@@ -47,8 +47,10 @@ let new_donate = card_BDT_money1  + card1_input_value
 let amar_taka2 = amar_taka1 -  new_donate
 
 
+
+
   
-    if( !isNaN (card1_input_value) &&  card1_input_value >=1  && card1_input_value <= amar_taka1 &&  amar_taka1 >=  new_donate ){
+    if(!isNaN (card1_input1) && card1_input_value >=1  && card1_input_value <= amar_taka1 &&  amar_taka1 >=  new_donate ){
     
      
 
@@ -56,13 +58,15 @@ let amar_taka2 = amar_taka1 -  new_donate
       document.getElementById('card-BDT').innerText = new_donate
 
       document.getElementById('amar_taka').innerText = amar_taka2 
+
+      
     
       my_modal.showModal()
     card1_input.value =''
     let div =document.createElement('div')
     div.innerHTML=`
 <div class="py-3 px-4 bg-[#FFFFFF] shadow-lg rounded-lg mb-4 ">
-       <h1 class="lg:font-bold font-medium text-sm lg:text-xl mb-4" > ${card1_input_value}  Taka is Donated for famine-2024 at Feni, Bangladesh </h1>
+       <h1 class="lg:font-bold font-medium text-sm lg:text-xl mb-4 " > ${card1_input_value}  Taka is Donated for famine-2024 at Feni, Bangladesh </h1>
          <p class="text[1px	Inside
          #1111111A] text-xs ">Date :  ${currentDate}</p>
      </div>
@@ -79,6 +83,7 @@ let amar_taka2 = amar_taka1 -  new_donate
    
     else{ 
         alert('invalid donation amount ')
+         card1_input.value =''
     
     }
     
@@ -108,7 +113,7 @@ let amar_taka2 = amar_taka1 -  new_donate
 
 
   
-    if( !isNaN (card1_input_value) &&  card1_input_value >=1  && card1_input_value <= amar_taka1 &&  amar_taka1 >=  new_donate ){
+    if( !isNaN (card1_input1) &&  card1_input_value >=1  && card1_input_value <= amar_taka1 &&  amar_taka1 >=  new_donate ){
     
      
 
@@ -135,6 +140,7 @@ let amar_taka2 = amar_taka1 -  new_donate
    
     else{ 
         alert('your code is invalid')
+         card1_input.value =''
     
     }
     
@@ -166,7 +172,7 @@ let amar_taka2 = amar_taka1 -  new_donate
 
 
   
-    if( !isNaN (card1_input_value) &&  card1_input_value >=1   && card1_input_value <= amar_taka1 &&  amar_taka1 >=  new_donate ){
+    if( !isNaN (card1_input1) &&  card1_input_value >=1   && card1_input_value <= amar_taka1 &&  amar_taka1 >=  new_donate ){
     
      
 
@@ -200,6 +206,7 @@ let amar_taka2 = amar_taka1 -  new_donate
    
     else{ 
         alert('your code is invalid')
+         card1_input.value =''
     
     }
     
